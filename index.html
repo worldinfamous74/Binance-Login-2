@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    :root{
+        background-color: #0f1213;
+    }
+
+    *{
+        margin: 20;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+
+    body{
+        font-size: 17px;
+        font-family: 'Work Sans',sans-serif;
+        height: 100vh;
+        padding: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: center;
+        align-items: first baseline;
+    }
+
+
+    .login-welcome-title{
+        display: flex;
+        gap: 49rem;
+        flex-direction: row;
+        color: rgb(255, 255, 255);
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    
+    .logo{
+        margin: 0 auto;
+        width: 15.5rem;
+    }
+
+
+    .text-field{
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem;
+    }
+
+    .text-field input{
+        color: aliceblue;
+        max-width: 100%;
+        width: 100%;
+        min-height: 2.8rem;
+        font-size: 0.7rem;
+        letter-spacing: .15rem;
+        outline: none;
+        background: var(--input-bg);
+        transition: .25s;
+        border-radius: 0.73rem;
+        text-indent: 1.25rem;
+    }
+
+
+    .my-form{
+        display: contents;
+        flex-direction: column;
+        color: rgb(161, 184, 118);
+        justify-content: start;
+        position: relative;
+        width: 100%;
+        max-width: 42rem;
+        padding: 2.5rem 2rem;
+        padding-top: 0;
+        padding-bottom: 2rem;
+        border-radius: 2rem;
+        height: fit-content;
+    }
+
+    .my-form__button{
+        background: rgb(223, 175, 19);
+        color:#0f1213;
+        border: 0rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        line-height: 3rem;
+        font-size: 1.4rem;
+        letter-spacing: .05rem;
+        cursor: grabbing;
+        font-weight: 100;
+        min-height: 3.125rem;
+        width: 100%;
+        border-radius: 0.75rem;
+    }
+
+    
+    .tooltip__content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        color: aliceblue;
+    }
+
+    
+    .special-row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;        
+    }
+
+
+    .my-form__actions{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        width: 100%;
+        justify-content: space-between;
+        gap: 1rem;
+        margin-top: 2.5rem;
+    }
+
+    .my-create-form__row{
+        align-items: center;
+        display: flex;
+        color: yellowgreen;
+        flex-direction: column;
+        align-self: center;
+        width: 100%;
+        justify-content: space-between;
+        gap: 1rem;
+        margin-top: 0.05rem;
+    }
+
+    .botton-links{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        word-spacing: 0.5rem;  
+    } 
+</style>
+
+<body>
+    <div class="wrapper">
+        <form class="my-form">
+            <div class="login-welcome-row">
+                <a href="#" title="logo">
+                    <img src="Img/binance.webp" alt="logo" class="logo">
+                </a>
+
+                <div class="login-welcome-title">
+                        <h1>Login</h1>
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        width="32" 
+                        height="32" 
+                        fill="white" viewBox="0 0 256 256">
+                        <path d="M104,40H56A16,16,0,0,0,40,56v48a16,16,0,0,0,16,16h48a16,16,0,0,0,16-16V56A16,16,0,0,0,104,40Zm0,64H56V56h48v48Zm0,32H56a16,16,0,0,0-16,16v48a16,16,0,0,0,16,16h48a16,16,0,0,0,16-16V152A16,16,0,0,0,104,136Zm0,64H56V152h48v48ZM200,40H152a16,16,0,0,0-16,16v48a16,16,0,0,0,16,16h48a16,16,0,0,0,16-16V56A16,16,0,0,0,200,40Zm0,64H152V56h48v48Zm-64,72V144a8,8,0,0,1,16,0v32a8,8,0,0,1-16,0Zm80-16a8,8,0,0,1-8,8H184v40a8,8,0,0,1-8,8H144a8,8,0,0,1,0-16h24V144a8,8,0,0,1,16,0v8h24A8,8,0,0,1,216,160Zm0,32v16a8,8,0,0,1-16,0V192a8,8,0,0,1,16,0Z"></path></svg>     
+                    
+                </div>
+            </div>
+
+            <div class="text-field">
+                <label for="Login">Email/Phonenumber</label>
+                <input type="text" id="Login" name="Login" autocomplete="off"
+                placeholder="Email/Phone(without country code).." required>
+            </div>
+            
+            <button type="submit"
+            class="my-form__button">
+            Next
+            </button>
+
+            
+            <span class="tooltip__content">OR</span>
+
+            <br>
+            <div class="special-row">
+                <svg xmlns="http://www.w3.org/2000/svg" 
+                x="0px" 
+                y="0px" 
+                width="30" 
+                height="20" 
+                viewBox="0 0 58 58">
+                    <path fill="#FFC107" 
+                    d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"></path><path fill="#FF3D00" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"></path><path fill="#4CAF50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"></path><path fill="#1976D2" d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"></path>
+                    </svg><a href="#" title="Use Google">
+                    Continue With Google
+                </a>
+
+                <br>
+                <br>
+
+                <svg xmlns="http://www.w3.org/2000/svg" 
+                x="0px" 
+                y="0px" 
+                width="30" 
+                height="20" 
+                viewBox="0 0 50 50">
+                    <path d="M 33.394531 0 A 1.0001 1.0001 0 0 0 33.320312 0.00390625 C 30.483287 0.23086833 27.514392 1.8335543 25.623047 4.1699219 A 1.0001 1.0001 0 0 0 25.615234 4.1796875 C 24.00384 6.2207656 22.538942 9.1587256 23.117188 12.28125 A 1.0001 1.0001 0 0 0 23.167969 12.460938 C 22.698358 12.311724 22.217906 12.145195 21.701172 11.958984 C 20.301057 11.454438 18.684404 10.900391 16.699219 10.900391 C 12.712373 10.900391 8.7255571 13.205354 6.1640625 17.150391 C 2.4136353 22.783543 3.1878409 32.778446 8.7617188 41.345703 A 1.0001 1.0001 0 0 0 8.7636719 41.347656 C 9.7300853 42.822708 10.888254 44.459361 12.308594 45.771484 C 13.726036 47.080931 15.460301 48.093523 17.488281 48.097656 C 19.24239 48.148536 20.454207 47.578023 21.529297 47.101562 C 22.609433 46.62282 23.612602 46.199219 25.5 46.199219 A 1.0001 1.0001 0 0 0 25.523438 46.199219 C 27.409395 46.153219 28.400158 46.553371 29.453125 47.025391 C 30.506092 47.49741 31.678168 48.099609 33.400391 48.099609 A 1.0001 1.0001 0 0 0 33.429688 48.099609 C 35.474108 48.039479 37.235327 46.947764 38.699219 45.564453 C 40.157197 44.18673 41.361983 42.485126 42.332031 40.955078 L 42.335938 40.949219 C 43.760956 38.81089 44.309786 37.613344 45.408203 35.216797 A 1.0001 1.0001 0 0 0 44.859375 33.867188 C 41.327688 32.508845 39.287623 29.333479 38.982422 26.021484 C 38.677221 22.70949 40.071371 19.345495 43.570312 17.482422 A 1.0001 1.0001 0 0 0 43.894531 15.992188 C 41.41599 12.759307 37.766373 10.900391 34.300781 10.900391 C 32.042051 10.900391 30.3948 11.455069 29.056641 11.964844 C 28.111313 12.324969 27.335399 12.635227 26.53125 12.791016 C 28.718476 12.1851 30.674822 10.757058 31.980469 9.125 A 1.0001 1.0001 0 0 0 31.984375 9.1191406 C 33.61973 7.0476993 34.95372 4.0103642 34.384766 0.82421875 A 1.0001 1.0001 0 0 0 33.394531 0 z M 32.306641 2.3691406 C 32.280421 4.4009411 31.555854 6.4343789 30.417969 7.8769531 C 29.219278 9.3742199 27.170947 10.493986 25.203125 10.818359 C 25.238475 8.8763946 26.016574 6.9032537 27.181641 5.4257812 C 28.429911 3.8860518 30.42454 2.8427058 32.306641 2.3691406 z M 16.699219 12.900391 C 18.314034 12.900391 19.648551 13.34439 21.023438 13.839844 C 22.398322 14.335298 23.820115 14.900391 25.5 14.900391 C 27.179885 14.900391 28.480738 14.324209 29.767578 13.833984 C 31.054418 13.34376 32.359511 12.900391 34.300781 12.900391 C 36.763974 12.900391 39.525299 14.2077 41.607422 16.478516 C 38.211077 18.82834 36.657322 22.57118 36.992188 26.205078 C 37.330481 29.876205 39.535812 33.345723 43.164062 35.181641 C 42.358078 36.927273 41.838943 38.089241 40.667969 39.845703 A 1.0001 1.0001 0 0 0 40.654297 39.865234 C 39.726361 41.330396 38.58728 42.919639 37.326172 44.111328 C 36.06822 45.300035 34.73296 46.052348 33.380859 46.095703 C 32.117391 46.090903 31.386725 45.699154 30.271484 45.199219 C 29.150224 44.696585 27.691948 44.14804 25.480469 44.201172 L 25.476562 44.201172 C 23.279505 44.205972 21.835909 44.779199 20.720703 45.273438 C 19.600836 45.769742 18.865714 46.142594 17.533203 46.099609 A 1.0001 1.0001 0 0 0 17.5 46.099609 C 16.133333 46.099609 14.870675 45.415611 13.666016 44.302734 C 12.461994 43.190448 11.370759 41.678193 10.4375 40.253906 L 10.435547 40.251953 C 5.2127435 32.222646 4.7870606 22.821362 7.8320312 18.253906 A 1.0001 1.0001 0 0 0 7.8398438 18.244141 C 10.078498 14.792882 13.488108 12.900391 16.699219 12.900391 z"></path>
+                    </svg><a href="#" title="Use Apple">
+                    Continue With Apple
+                </a>
+                <!--more social links-->
+            </div>
+        </form>
+
+        <br>
+        <br>
+
+        <div class="my-create-form__actions">
+            <div class="my-create-form__row">
+                <a href="#" title="Ceate a Binance Account">
+                    Create a Binance Account
+                </a>
+            </div>
+        </div>
+    </div>
+
+        <!--CSS---
+        hover-button{
+        transform: translateY(-6px);
+        box-shadow: 0 10px 20px rgb(84, 160, 90);
+        padding: 0.4rem 10rem;
+        border: none;
+        border-radius: 4px;
+        }
+        -->
+    <br>
+
+    <div class="botton-links">
+        <p><a href="#" title="Language">English</a> |
+             <a href="#" title="Language">Cookies</a> |
+              <a href="#" title="Language">Terms</a>  |
+              <a href="#" title="Language">Privacy.</a>
+        </p>
+        <!--more links-->
+    </div>
+
+    <script src="script.js">
+        let loginForm = document.querySelector(".my-form");
+
+        loginForm.addEventListener("submit", (e) => {e.preventDefault();
+            console.log("Form submitted!");
+        });
+    </script>
+</body>
+</html>
